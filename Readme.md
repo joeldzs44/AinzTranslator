@@ -15,7 +15,7 @@ You need to create a bot on discord.com/developers and get your bot access token
 
 ## Usage instructions
 The bot relies on user reactions to determine destination language.
-Eg. If user reacts with a :fr: flag emoji on a message, the bot will reply back with the french translation. Follow these instructions to setup the bot:
+Eg. If user reacts with a 🇫🇷 flag emoji on a message, the bot will reply back with the french translation. Follow these instructions to setup the bot:
 
 1. Clone the git repository using following command
 >`git clone https://github.com/joeldzs44/AinzTranslator.git`

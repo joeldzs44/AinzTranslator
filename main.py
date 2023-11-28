@@ -25,7 +25,7 @@ async def on_reaction_add(reaction, user):
             sentMessage = str(reaction.message.content)
             translator = Translator()
             sendMessage = translator.translate(sentMessage, dest=selectedLanguage)
-            await reaction.message.channel.send(sendMessage.text)
+            await reaction.message.reply(f"<@{user.id}> {reactedEmoji} Translation:\n\n"+sendMessage.text)
 
 load_dotenv()
 token = os.getenv("TOKEN")

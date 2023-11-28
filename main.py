@@ -18,8 +18,8 @@ async def on_ready():
 async def on_reaction_add(reaction, user):
     if reaction.emoji:
         reactedEmoji = reaction.emoji
-        if not(languages.get(reactedEmoji)):
-            await reaction.message.channel.send("Language not added!")
+        if not(languages.get(reactedEmoji)): 
+            pass
         else:
             selectedLanguage = languages.get(reactedEmoji)
             sentMessage = str(reaction.message.content)
